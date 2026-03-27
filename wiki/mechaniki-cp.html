@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mechaniki CP/HP/ATK — Alcanolepsy Wiki</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1>Mechaniki (CP / HP / ATK)</h1>
+          <p class="muted">Alcanolepsy Wiki</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="./">Wiki</a>
+        <a href="../">Strona</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Definicje</h2>
+        <ul>
+          <li><b>db</b> — liczba wiązań podwójnych</li>
+          <li><b>tb</b> — liczba wiązań potrójnych</li>
+          <li><b>pi</b> — liczba wiązań π: <code>pi = db + 2·tb</code></li>
+          <li><b>sigma</b> — liczba wiązań σ</li>
+          <li><b>het</b> — liczba atomów innych niż C i H</li>
+          <li><b>M</b> — masa molowa</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Wzory</h2>
+        <p>
+          Aktualne wzory w grze:
+        </p>
+        <pre><code>ATK = (1 + het) * (pi * M)
+HP  = M * sigma / (1 + pi)
+CP  = (ATK * HP) / 1000</code></pre>
+        <p class="muted">
+          CP jest zaokrąglane do 2 miejsc po przecinku.
+        </p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <a href="./">← Wiki</a>
+    </footer>
+  </body>
+</html>
+
